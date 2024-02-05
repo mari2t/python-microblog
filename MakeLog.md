@@ -1,5 +1,9 @@
 # MakeLog
 
+## 2024/2/5
+
+1. 管理者を作成（python manage.py createsuperuser）
+
 ## 2024/2/4
 
 1. migrationフォルダを作成（python manage.py makemigrations）
