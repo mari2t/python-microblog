@@ -1,5 +1,10 @@
 # MakeLog
 
+## 2024/2/6
+
+1. /adminとパスで管理画面にアクセスできる。
+2. admin.pyにPostをimportすると管理画面にPostが表示される。
+
 ## 2024/2/5
 
 1. 管理者を作成（python manage.py createsuperuser）
