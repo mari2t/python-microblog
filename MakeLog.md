@@ -1,5 +1,11 @@
 # MakeLog
 
+## 2024/2/7
+
+1. base.html作成
+2. BulmaCSSをあてる
+3. {% extends "blog/base.html"}と書くとbase.htmlを継承することができる
+
 ## 2024/2/6
 
 1. /adminとパスで管理画面にアクセスできる。
