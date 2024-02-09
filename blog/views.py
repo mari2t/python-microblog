@@ -6,3 +6,6 @@ from .models import Post
 def frontpage(request):
     posts = Post.objects.all()
     return render(request,"blog/frontpage.html",{"posts":posts})
+
+def post_detail(request,slug):
+    return(request,"blog/post_detail.html")
