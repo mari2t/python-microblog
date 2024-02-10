@@ -1,5 +1,13 @@
 # MakeLog
 
+## 2024/2/11
+
+1.  Commentモデルを作成。
+2.  マイグレーション：python manage.py makemigrations
+3.  マイグレート：python manage.py migrate
+4.  サーバー立ち上げ：python manage.py runserver
+5.  {% csrf_token %}はCross Site Request Forgery（CSRF）攻撃を防ぐために使われる。
+
 ## 2024/2/10
 
 1.  <a href="{%url 'post_detail' post.slug%}">もっと読む</a>でリンクが追加された。
@@ -15,8 +23,8 @@
 ## 2024/2/8
 
 1. ミス。まだ%の打ち間違いあり。
-   正：{% endblock %}
-   誤：{$ endblock %}
+   〇：{% endblock %}
+   ✕：{$ endblock %}
 
 ## 2024/2/7
 
