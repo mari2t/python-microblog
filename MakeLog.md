@@ -1,5 +1,13 @@
 # MakeLog
 
+## 2024/2/10
+
+1.  <a href="{%url 'post_detail' post.slug%}">もっと読む</a>でリンクが追加された。
+2.  models.CASCADEのCASCADEは関連付けられているものを全て削除できる
+3.  タイプミス。全然わからなくて、ChatGPTになげてようやくわかった…。
+    〇　related_name
+    ✕　relatede_name
+
 ## 2024/2/9
 
 1. post_detail.htmlを追加。

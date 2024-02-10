@@ -8,4 +8,5 @@ def frontpage(request):
     return render(request,"blog/frontpage.html",{"posts":posts})
 
 def post_detail(request,slug):
-    return(request,"blog/post_detail.html")
+    post = Post.objects.get(slug=slug)
+    return render (request,"blog/post_detail.html",{"post":post})

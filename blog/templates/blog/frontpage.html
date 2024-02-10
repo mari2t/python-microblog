@@ -3,6 +3,6 @@
   <h2 class="subtitle"></h2>
   {{post.title}}<small>Posted at {{post.posted_date}}</small>
   <p>{{post.intro}}</p>
-  <hr />
+  <a href="{%url 'post_detail' post.slug%}">もっと読む</a>
 </div>
 {% endfor %} {% endblock %}
