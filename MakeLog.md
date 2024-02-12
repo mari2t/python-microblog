@@ -1,5 +1,14 @@
 # MakeLog
 
+## 2024/2/12
+
+1.  {{form.as_p}}でinputなど書かなくてもformが作成される。pはpタグ。
+2.  Comment投稿エラー。models.pyでbody = models.TextField()を追記した後上書きしなかったのでbodyが無かった。
+3.  Commentが投稿できないエラー。
+    〇　<form action="" method="post">
+    ✕　<form action="" ,method="post">
+4.  テストアドレスとしてfoamにaaa@gmailとしたら「有効なメールアドレスを入力してください。」とでてきた。
+
 ## 2024/2/11
 
 1.  Commentモデルを作成。
