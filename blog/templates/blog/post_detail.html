@@ -6,6 +6,29 @@
 <p>{{post.body}}</p>
 <hr />
 
+<h2 class="subtitle">コメント</h2>
+
+{% for comment in post.comments.all %}
+
+<article class="media">
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>
+          {{comment.name}}
+          <small>{{comment.posted_date}}</small>
+        </strong>
+        <br />{{comment.body}}
+      </p>
+    </div>
+  </div>
+</article>
+{% empty %}
+<div class="notification">コメントはまだありません</div>
+<hr />
+
+{% endfor %}
+
 <h2 class="subtitle">コメントを追加</h2>
 <form action="" method="post">
   {% csrf_token %} {{form.as_p}}
