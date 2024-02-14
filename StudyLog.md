@@ -1,5 +1,9 @@
 # MakeLog
 
+## 2024/2/14
+
+1.  Readme作成
+
 ## 2024/2/13
 
 1.  {% empty %}:空の時の場合を記述できる。
@@ -9,9 +13,9 @@
 
 1.  {{form.as_p}}でinputなど書かなくてもformが作成される。pはpタグ。
 2.  Comment投稿エラー。models.pyでbody = models.TextField()を追記した後上書きしなかったのでbodyが無かった。
-3.  Commentが投稿できないエラー。
-    〇　<form action="" method="post">
-    ✕　<form action="" ,method="post">
+3.  Commentが投稿できないエラー。  
+    〇　form action="" method="post"  
+    ✕　form action="" ,method="post"
 4.  テストアドレスとしてfoamにaaa@gmailとしたら「有効なメールアドレスを入力してください。」とでてきた。
 
 ## 2024/2/11
@@ -24,10 +28,10 @@
 
 ## 2024/2/10
 
-1.  <a href="{%url 'post_detail' post.slug%}">もっと読む</a>でリンクが追加された。
+1.  href="{%url 'post_detail' post.slug%}でリンクが追加された。
 2.  models.CASCADEのCASCADEは関連付けられているものを全て削除できる
-3.  タイプミス。全然わからなくて、ChatGPTになげてようやくわかった…。
-    〇　related_name
+3.  タイプミス。全然わからなくて、ChatGPTになげてようやくわかった…。  
+    〇　related_name  
     ✕　relatede_name
 
 ## 2024/2/9
@@ -36,8 +40,8 @@
 
 ## 2024/2/8
 
-1. ミス。まだ%の打ち間違いあり。
-   〇：{% endblock %}
+1. ミス。まだ%の打ち間違いあり。  
+   〇：{% endblock %}  
    ✕：{$ endblock %}
 
 ## 2024/2/7
